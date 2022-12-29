@@ -1,6 +1,6 @@
-// var a = 10;
-// var b = "10";
-// console.log(a === b);
+var a = 10;
+var b = "10";
+console.log(a === b);
 
 //LOGICKI OPERATORI
 // = dodeljuje vrednost
@@ -43,7 +43,7 @@ function test() {
 //let radi sve suprotno od var
 let a = 10; //globalna
 let b = 20;
-a = 30;
+a = 30; //promena vrednosti
 a = 50;
 
 //const radi sve isto sto i let, razlika je sto kod const ne mozemo da menjamo vrednost ali mozemo properti
