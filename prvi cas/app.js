@@ -12,8 +12,8 @@ console.log(true, false);
 //3. Boolean -> predstavlja logicke operacije i kontrolise flow aplikacije
 //4. Undifined -> Prikazuje vrednost koja nije definisana
 //5. Null -> Null prikazuje da nesto nema vrednost
-//6. Symbol ->
-//7. Bigint ->
+//6. Symbol -> Jedinstveni identifikator koji se koristi za Privacy, protokole itd
+//7. Bigint -> Koristi se za predstavljanja velikog skupa brojeva
 
 //Promenljiva ili varijabla sluzi kao konteirner za skladistenje neke vrednosti
 
