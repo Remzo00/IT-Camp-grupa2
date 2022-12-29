@@ -1,6 +1,6 @@
-var a = 10;
-var b = "10";
-console.log(a === b);
+// var a = 10;
+// var b = "10";
+// console.log(a === b);
 
 //LOGICKI OPERATORI
 // = dodeljuje vrednost
@@ -27,3 +27,28 @@ cars[1] = "audi";
 
 console.log(cars);
 //Funkcije
+
+//var nam dozvoljava da definisemo istu promenljivu i poziva varijablu globalno
+
+// var a = 10;
+// var a = "10";
+
+// console.log(a);
+
+function test() {
+  let a = 20; //lokalna varijabla
+  console.log(a);
+}
+
+//let radi sve suprotno od var
+let a = 10; //globalna
+let b = 20;
+a = 30;
+a = 50;
+
+//const radi sve isto sto i let, razlika je sto kod const ne mozemo da menjamo vrednost ali mozemo properti
+const c = 20;
+const obj = {
+  ime: "talib",
+};
+obj.ime = "mensur";
