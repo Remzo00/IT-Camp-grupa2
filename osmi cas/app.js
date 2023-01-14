@@ -8,6 +8,7 @@
 //Funkcije definisemo jednom i koristimo na nivou celog programa
 //Kod postaje kraci
 
+//ES5 - stari nacin pisanja funckije
 function sabiranje(a, b) {
   console.log(a + b);
 }
