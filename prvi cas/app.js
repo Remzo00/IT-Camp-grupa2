@@ -1,6 +1,6 @@
 // KOMENTAR
 //Console.log prikazuje sadrzaj u konzoli
-console.log("Hello");
+console.log("Test");
 // alert("Hello");
 document.write("Hello");
 
