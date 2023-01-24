@@ -19,15 +19,15 @@ const ages = [33, 12, 20, 65, 54, 44, 11, 13, 15, 45, 25, 18, 32];
 //     console.log(companies[i])
 // }
 
-// companies.forEach(function(company){
-//     console.log(company)
-// })
+companies.forEach(function(company){
+    console.log(company)
+})
 
 //Map -> pravi novi niz na osnovu zadatog niza
 
-// const companiesNames = companies.map(function(company){
-//     return company.name
-// })
+const companiesNames = companies.map(function(company){
+    return company.name
+})
 
 // console.log(companiesNames)
 
@@ -69,5 +69,22 @@ const sortCompanies = companies.sort(function(a,b){
 
 console.log(sortCompanies)
 
-//Reduce
+//Reduce -> kombinuje sve elemente niza
+
+// let ageSum = 0
+
+// for(let i = 0; i < ages.length; i++){
+//     ageSum += ages[i]
+// }
+
+// console.log(ageSum)
+
+const ageSum = ages.reduce((total, age) => {
+    return total + age
+})
+
+console.log(ageSum)
+
+
+//Lambda =>
 
