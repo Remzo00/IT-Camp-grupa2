@@ -10,11 +10,21 @@
 //web programiranja i veoma vazan za razvoj interaktivnih i dinamickih web aplikacija.
 
 //getElementById -> uzima element iz HTML-a po ID
-const paragraf = document.getElementById("test").innerHTML = "Hellooo"
+const paragraf = document.getElementById("test").innerHTML = "Pozdrav"
 
-const header = document.getElementsByClassName("demo").style.color = "blue"
+const listItems = document.getElementsByClassName("list-group-fruit")
 
-const test = document.getElementsByTagName("h1")
+const klik = () => {
+    for(let i = 0; i < listItems.length; i++){
+        listItems[i].style.color = "blue"
+    }
+}
+
+
+
+
+
+
 
 
 
