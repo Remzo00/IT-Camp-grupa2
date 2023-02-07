@@ -35,6 +35,9 @@ const validateForm = () => {
     }
   }
 
+  //Napraviti login formu koja izgleda lepo, ima tri polja: email, sifra i potvrdi sifru.
+  //Sifra i Potvrdi sifru moraju da se podudaraju.
+
 
 
 
