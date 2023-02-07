@@ -11,14 +11,29 @@
 
 //getElementById -> uzima element iz HTML-a po ID
 const paragraf = document.getElementById("test").innerHTML = "Pozdrav"
-
 const listItems = document.getElementsByClassName("list-group-fruit")
+const listItemsByTag = document.getElementsByTagName("li")
+const header = document.querySelector(".naziv_klase")
 
 const klik = () => {
     for(let i = 0; i < listItems.length; i++){
         listItems[i].style.color = "blue"
     }
 }
+
+const validateForm = () => {
+    let email = document.forms["myForm"]["email"].value;
+    let pass = document.forms["myForm"]["password"].value;
+
+    if (email == "") {
+      alert("Email must be filled out");
+      return false;
+    }
+    if(pass == ""){
+        alert("Password must be filled out")
+        return false;
+    }
+  }
 
 
 
