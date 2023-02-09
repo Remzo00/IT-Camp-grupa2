@@ -22,21 +22,28 @@ const klik = () => {
 }
 
 const validateForm = () => {
-    let email = document.forms["myForm"]["email"].value;
-    let pass = document.forms["myForm"]["password"].value;
+    let email = document.forms["myForm"]["email"]
+    let pass = document.forms["myForm"]["password"]
+    let confirmPass = document.forms["myForm"]["confirmPassword"]
 
-    if (email == "") {
+    if (email.value.length < 9) {
       alert("Email must be filled out");
       return false;
     }
-    if(pass == ""){
+    if(pass.value.length < 6){
         alert("Password must be filled out")
+        return false;
+    }
+    if(confirmPass.value.length !== pass.value.length){
+        alert("Mora ista sifra")
         return false;
     }
   }
 
   //Napraviti login formu koja izgleda lepo, ima tri polja: email, sifra i potvrdi sifru.
   //Sifra i Potvrdi sifru moraju da se podudaraju.
+
+  
 
 
 
