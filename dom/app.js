@@ -15,6 +15,10 @@ const listItems = document.getElementsByClassName("list-group-fruit")
 const listItemsByTag = document.getElementsByTagName("li")
 const header = document.querySelector(".naziv_klase")
 
+const preventHandle = (e) => {
+  e.preventDefault();
+}
+
 const klik = () => {
     for(let i = 0; i < listItems.length; i++){
         listItems[i].style.color = "blue"
@@ -40,10 +44,16 @@ const validateForm = () => {
     }
   }
 
+
+  const button = document.getElementById("button")
+
+  button.addEventListener("click", function(){
+    console.log("button was clicked")
+  })
   //Napraviti login formu koja izgleda lepo, ima tri polja: email, sifra i potvrdi sifru.
   //Sifra i Potvrdi sifru moraju da se podudaraju.
 
-  
+
 
 
 
