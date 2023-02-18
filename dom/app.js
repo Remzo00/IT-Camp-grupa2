@@ -10,49 +10,55 @@
 //web programiranja i veoma vazan za razvoj interaktivnih i dinamickih web aplikacija.
 
 //getElementById -> uzima element iz HTML-a po ID
-const paragraf = document.getElementById("test").innerHTML = "Pozdrav"
-const listItems = document.getElementsByClassName("list-group-fruit")
-const listItemsByTag = document.getElementsByTagName("li")
-const header = document.querySelector(".naziv_klase")
+// const paragraf = document.getElementById("test").innerHTML = "Pozdrav"
+// const listItems = document.getElementsByClassName("list-group-fruit")
+// const listItemsByTag = document.getElementsByTagName("li")
+// const header = document.querySelector(".naziv_klase")
 
-const preventHandle = (e) => {
-  e.preventDefault();
-}
+// const preventHandle = (e) => {
+//   e.preventDefault();
+// }
 
-const klik = () => {
-    for(let i = 0; i < listItems.length; i++){
-        listItems[i].style.color = "blue"
-    }
-}
+// const klik = () => {
+//     for(let i = 0; i < listItems.length; i++){
+//         listItems[i].style.color = "blue"
+//     }
+// }
 
-const validateForm = () => {
-    let email = document.forms["myForm"]["email"]
-    let pass = document.forms["myForm"]["password"]
-    let confirmPass = document.forms["myForm"]["confirmPassword"]
+// const validateForm = () => {
+//     let email = document.forms["myForm"]["email"]
+//     let pass = document.forms["myForm"]["password"]
+//     let confirmPass = document.forms["myForm"]["confirmPassword"]
 
-    if (email.value.length < 9) {
-      alert("Email must be filled out");
-      return false;
-    }
-    if(pass.value.length < 6){
-        alert("Password must be filled out")
-        return false;
-    }
-    if(confirmPass.value.length !== pass.value.length){
-        alert("Mora ista sifra")
-        return false;
-    }
-  }
+//     if (email.value.length < 9) {
+//       alert("Email must be filled out");
+//       return false;
+//     }
+//     if(pass.value.length < 6){
+//         alert("Password must be filled out")
+//         return false;
+//     }
+//     if(confirmPass.value.length !== pass.value.length){
+//         alert("Mora ista sifra")
+//         return false;
+//     }
+//   }
 
 
-  const button = document.getElementById("button")
+//   const button = document.getElementById("button")
 
-  button.addEventListener("click", function(){
-    console.log("button was clicked")
-  })
-  //Napraviti login formu koja izgleda lepo, ima tri polja: email, sifra i potvrdi sifru.
-  //Sifra i Potvrdi sifru moraju da se podudaraju.
+//   button.addEventListener("click", function(){
+//     console.log("button was clicked")
+//   })
 
+  //Nodes
+  
+const noviParagraf = document.createElement("p")
+const text = document.createTextNode("Ovo je paragraf")
+noviParagraf.appendChild(text)
+
+const newElement = document.getElementById("container")
+newElement.appendChild(noviParagraf)
 
 
 

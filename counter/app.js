@@ -14,14 +14,28 @@ let counter = 0;
 incrementButton.addEventListener("click", function () {
   counter++;
   count.innerHTML = counter;
+
+  if (counter > 0) {
+    count.style.color = "green";
+  }
 });
 
 decrementButton.addEventListener("click", function () {
   counter--;
   count.innerHTML = counter;
+  
+  if (counter < 0) {
+    count.style.color = "red";
+  }
 });
 
 resetButton.addEventListener("click", function () {
   counter = 0;
   count.innerHTML = counter;
+
+  if (counter === 0) {
+    count.style.color = "#222";
+  }
 });
+
+
