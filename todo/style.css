@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #new-task {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .task .text {
+    flex: 1;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .task .delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .task .delete-button:hover {
+    background-color: #ff6659;
+  }
