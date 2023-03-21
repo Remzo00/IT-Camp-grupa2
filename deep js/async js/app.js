@@ -1,10 +1,10 @@
-// console.log("a")
+console.log("a")
 
-// setTimeout(() => {
-//     console.log("b")
-// })
+setTimeout(() => {
+    console.log("b")
+})
 
-// console.log("c")
+console.log("c")
 
 //single-thread
 //multi-thread
@@ -28,3 +28,13 @@ promise.then((message) => {
 }).catch((error) => {
     console.log("Ovo je " + error)
 })
+
+//Fetching API pomocu fetch() funckije i promise
+const fetchingData = () => {
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error))
+}
+
+
