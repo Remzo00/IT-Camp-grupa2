@@ -56,9 +56,6 @@ fetchingData()
 
 
 
-
-
-
 const generateFakeObject = async () => {
     const fakeObject = {
       id: Math.floor(Math.random() * 10) + 1,
