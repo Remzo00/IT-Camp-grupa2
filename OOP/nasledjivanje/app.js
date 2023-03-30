@@ -46,3 +46,9 @@ const display = (content) => {
 
 const elephant = new Elephant("African", "1T")
 display(elephant.dailyRoutine())
+
+//Napraviti klasu Osoba koja sadrzi ime i prezime
+//Napraviti klasu Student koja nasledjuje Osoba i ima jedan properti visak, a to je fakultet
+//Klasa student ima metodu prijavaIspita()
+//Klasa student treba da ispisuje ime i prezime studenta i fakultet
+//Primer: "Ja sam Pera Peric sa fakulteta Racunarskih nauka"
