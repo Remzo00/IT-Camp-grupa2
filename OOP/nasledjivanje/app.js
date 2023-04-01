@@ -60,23 +60,6 @@ display(elephant.dailyRoutine())
 //Klasa Automobil ima jedan novi properti: marka
 //Napraviti instancu za obe klase i pozvati metode i za Vozilo i Automobil
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class Vozilo {
     constructor(boja, brzina, model) {
       this.boja = boja;
@@ -98,4 +81,33 @@ class Vozilo {
     }
   }
   
+  class Automobil extends Vozilo {
+    constructor(boja, brzina, model, marka) {
+      super(boja, brzina, model);
+      this.marka = marka;
+    }
   
+    pokreni() {
+      console.log(`Automobil marke ${this.marka} je pokrenut.`);
+    }
+  
+    stani() {
+      console.log(`Automobil marke ${this.marka} je stao.`);
+    }
+  
+    promeniBrzinu(novaBrzina) {
+      super.promeniBrzinu(novaBrzina);
+      console.log(`Automobil marke ${this.marka} je promenio brzinu na ${novaBrzina}.`);
+    }
+  }
+  
+  const vozilo1 = new Vozilo('plava', 80, 'Yamaha');
+  const automobil1 = new Automobil('crvena', 120, 'Civic', 'Honda');
+  
+  vozilo1.pokreni();
+  vozilo1.promeniBrzinu(100);
+  vozilo1.zaustavi(); 
+  
+  automobil1.pokreni();
+  automobil1.promeniBrzinu(140);
+  automobil1.stani();
