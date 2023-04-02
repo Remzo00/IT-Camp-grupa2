@@ -33,3 +33,10 @@ osoba.setGodine(30)
 
 console.log(osoba.getIme())
 console.log(osoba.getGodine())
+
+//Potrebno je implementirati sistem upravljanja radnicima u nekoj firmi. Svi radnici imaju zajednička svojstva (ime, prezime, godine),
+//ali postoje i neke razlike među radnicima,
+//npr. menadžer i običan radnik imaju različite nadležnosti i plate.
+//Potrebno je kreirati klase Radnik i Menadžer koje nasleđuju zajednička svojstva iz klase Osoba,
+//a zatim dodati i neke dodatne metode i svojstva.
+//Osim toga, sve privatne varijable treba da budu enkapsulirane.
